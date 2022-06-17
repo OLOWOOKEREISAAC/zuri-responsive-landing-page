@@ -124,7 +124,6 @@ footer div section:first-of-type{
 header nav img{
     transform: translateX(20%);
     animation-name: slide;
-    animation-duration: 3s;
     animation-duration: 4s;
     animation-iteration-count: 2;
     animation-fill-mode: backwards;
@@ -138,8 +137,8 @@ i{
     margin-right: 10%;
 }
 @keyframes slide{
-    from{transform: translateX(100px);}
-    to{transform: translateX(500px);}
+    from{transform: translateX(-10%);}
+    to{transform: translateX(90%);}
 }
 
 @media screen and (max-width:550px){
@@ -192,6 +191,13 @@ i{
     }
     #social i{
         margin: 5% 10%;
+    }
+    @keyframes slide{
+        from{transform: translateX(-10%);}
+        to{transform: translateX(40%);}
+    }
+    header nav img{
+        animation-duration: 2s;  
     }
    
 
