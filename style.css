@@ -91,10 +91,7 @@ footer div{
     color: white;
     background-color: hsl(192, 100%, 9%);  
 }
-footer section img{
-    background-color: green;
-    
-}
+
 footer small{
     grid-column: 1/5;
     text-align: right;
@@ -106,6 +103,13 @@ header,main, footer{
 }
 h1{
     font-family: Poppins;
+}
+
+footer div svg{
+    grid-column: 1/5;
+    width: 100%;
+    fill: white ;
+    text-align: right;
 }
 
 @media screen and (max-width:550px){
