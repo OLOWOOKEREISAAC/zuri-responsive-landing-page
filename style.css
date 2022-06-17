@@ -125,13 +125,17 @@ header nav img{
     transform: translateX(20%);
     animation-name: slide;
     animation-duration: 3s;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation-duration: 4s;
     animation-iteration-count: 2;
     animation-fill-mode: backwards;
-    animation-direction: alternate;
-
-    
+    animation-direction: alternate;    
+}
+i{
+    margin: 1em 0;
+}
+#social i{
+    margin-top: 5%;
+    margin-right: 10%;
 }
 @keyframes slide{
     from{transform: translateX(100px);}
@@ -185,6 +189,9 @@ header nav img{
         right: 5%;
         width: 110%;
         
+    }
+    #social i{
+        margin: 5% 10%;
     }
    
 
