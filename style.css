@@ -14,9 +14,9 @@ header nav{
     column-gap: 30%;
 }
 header nav button{
-    max-height: 50px;
+    height: fit-content;
     border-radius: 20px;
-    padding: 2% 15%;
+    padding:  5%;
     background-color: white;
     border: none;
     box-shadow: 2px 2px 8px 1px hsl(208, 11%, 55%);
@@ -26,12 +26,9 @@ header nav button{
     
 }
 
-header section{
-    margin: 5%;
-    grid-template-columns: 35% 60%;
-    column-gap: 5%;
-    padding-bottom: 5% ;
-    
+header section {
+    grid-template-columns: 45% 50%;
+    padding-bottom: 5%;
 }
 header button, main button{
     background-color: hsl(322, 100%, 66%);
@@ -141,7 +138,7 @@ i{
     to{transform: translateX(90%);}
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width:800px){
 
     header{
         margin:0;
@@ -149,7 +146,7 @@ i{
         background-image: url('./images/bg-hero-mobile.svg');
     }
     header section article{
-        padding: 0% 0% 20%;
+        padding: 0% 0% 15%;
     }
     header section,main section{
         margin: 5%;
@@ -160,6 +157,7 @@ i{
     }
     main section img{
         grid-row: 1;
+        margin-top:5%;     
     }
     header nav{
         padding: 5%;
@@ -167,13 +165,16 @@ i{
         grid-template-columns: 50% 30%;
         column-gap: 20%;
     }
-    footer div{
-        grid-template-columns: 95%;
-        align-items: center;
+    header nav button{
+        padding: 5%;
+        height: fit-content;
+    }
+    main section article {
+        padding: 10% 0 0 0;
     }
     footer div{
-        
-        margin: 10% 0 0;
+        grid-template-columns: 95%;
+        align-items: center;     
         grid-template-columns: 95%;
         padding: 10% 0% 10% 5%;
         padding-bottom: 5%;
@@ -186,7 +187,7 @@ i{
     }
     main  nav{
         right: 5%;
-        width: 110%;
+        width: 75%;
         
     }
     #social i{
@@ -201,4 +202,25 @@ i{
     }
    
 
+}
+@media screen and (max-width:500px){
+
+    main  nav{
+        padding: 1% 5%;
+        left: 2%;
+    }
+    footer div{
+        margin-top: 10% ;
+        
+    }
+    header nav button{
+        padding: 10%;
+        
+    }
+    
+}
+@media screen and (max-width:320px){
+    main nav{
+        top:40px
+    }
 }
